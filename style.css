@@ -1,0 +1,151 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6ff;
+    color: #26354a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4338ca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fde68a;
+}
+
+/* Home Section */
+.hero {
+    text-align: center;
+    padding: 65px 15px;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+.hero h2 {
+    color: #3730a3;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4338ca;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #312e81;
+}
+
+/* Course Section */
+.title {
+    text-align: center;
+    margin: 35px 0 15px;
+    color: #3730a3;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    width: 260px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #4338ca;
+    margin-bottom: 12px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #e0e7ff;
+}
+
+.about h2 {
+    margin-bottom: 12px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #25265e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
